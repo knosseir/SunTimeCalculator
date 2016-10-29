@@ -5,6 +5,7 @@
   <script src="time_calculator.js"></script>
   <script src="season_calculator.js"></script>
   <script src="Date.js"></script>
+  <script src="location.js"></script>
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
@@ -38,7 +39,6 @@
 
 </head>
 <body>
-
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
@@ -50,7 +50,9 @@
       </div>
     </div>
   </div>
-   <div id="map"></div>
+  <button type="button" id="button" onclick="getUserLocation()">Find location</button>
+  <div id="output"</div>
+   <div id="map">
   <script>
       function initMap() {
         var uluru = {lat: -25.363, lng: 131.044};
