@@ -16,7 +16,6 @@ function hour()
 {
 	return (new Date()).getHours();
 }
-v
 
 function month()
 {
