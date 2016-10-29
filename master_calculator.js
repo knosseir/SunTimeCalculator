@@ -147,5 +147,8 @@ function season_calculator() //y = user's input for season
 function master_calculator()
 {	var maxtimeinsun;
 	maxtimeinsun = 3 * time_calculator() * season_calculator() * tone_calculator(3);
-	console.log("You can spend ", maxtimeinsun, "hours in the sun.");
+	if(maxtimeinsun == 0)
+		console.log("You're not gonna get sunburned.")
+	else
+		console.log("You can spend ", maxtimeinsun, "hours in the sun.");
 }
