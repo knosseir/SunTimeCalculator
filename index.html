@@ -18,9 +18,9 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/css.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/skeleton.css">
+  <link rel="stylesheet" href="./css/css.css">
 
   <!--Javascript-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -28,7 +28,7 @@
   <script src="./time_calculator.js"></script>
   <script src="./season_calculator.js"></script>
   <script src="./Date.js"></script>
-  <script src="location.js"></script>
+  <script src="./location.js"></script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -41,7 +41,8 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   
   <div class="row">
-    <div id="nav" class="text white" >
+    <div id="nav" class="text">
+      <a id="s" class="navBox white" href="./index.html" style="float: left; margin-left: 2vw;">SUN TIME CALCULATOR</a>
       <a id="a" class="navBox white" href="#">ABOUT</a>
       <a id="c" class="navBox white" href="https://github.com/knosseir/SunTimeCalculator">GITHUB</a>
     </div>
@@ -57,9 +58,9 @@
 
 
   <div class="row">
-    <div id="ui" class="six columns center">
-      
-    
+    <div id="ui" class="six columns center"><!--time skin location season-->
+
+
       <button type="button" id="locationButton" onclick="getUserLocation()">Find Location</button>
     </div>
 

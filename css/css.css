@@ -27,6 +27,7 @@ body{
 	padding-top: 2vh;
 	display: none;
 	text-align: right;
+	z-index: 5;
 }
 #s{
 	/*stylize eventually*/
@@ -34,6 +35,7 @@ body{
 .navBox{
 	padding-right: 2vw;
 	margin-bottom: 4vh;
+	z-index: 5;
 }
 .wBox{
 	font-size: 2rem;
