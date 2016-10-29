@@ -7,6 +7,17 @@ function getDate()
 	return new Date();
 }
 
+function minute()
+{
+	return (new Date()).getMinutes();
+}
+
+function hour()
+{
+	return (new Date()).getHours();
+}
+v
+
 function month()
 {
 	return (new Date()).getMonth() +1;
