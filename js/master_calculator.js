@@ -67,7 +67,7 @@ function convertTime()
 
 function time_calculator() //x is user's input for time
 {
-	var timefactor;
+	var timefactor; 
 	var converted = convertTime();
 	if (converted >= 0 && converted<=5)
 		timefactor = 0;
@@ -90,7 +90,7 @@ function time_calculator() //x is user's input for time
 	else if (converted > 19 && converted <=20) //7-8
 		timefactor = 0.9;
 	else if (converted > 20 && converted <=24) //8-12
-		timefactor = 0;
+		timefactor = 0; 
 
 	return timefactor;
 }
@@ -101,31 +101,32 @@ var s = skinTone.options[skinTone.selectedIndex].value;
 function tone_calculator() //perameter temporary until I can pull it from index
 {	
 	var tonefactor;
-	var z = window.skinTone;
-	//z == document.getElementById('selection')
+	//var z = window.skinTone;
+	var r = document.getElementById("selection");
+	var z = r.options[r.selectedIndex].value;
 	if(z == "Skin1")
 		{
-			tonefactor = 3;
+			tonefactor = 1;
 		}
 	else if(z == "Skin2")
 		{
-			tonefactor = 4;
+			tonefactor = 2;
 		}
 	else if(z == "Skin3")
 		{
-			tonefactor = 5;
+			tonefactor = 3;
 		}
 	else if(z == "Skin4")
 		{
-			tonefactor = 6;
+			tonefactor = 4;
 		}
 	else if(z == "Skin5")
 		{
-			tonefactor = 7;
+			tonefactor = 5;
 		}
 	else if(z == "Skin6")
 		{
-			tonefactor = 13;
+			tonefactor = 6;
 		}
 	return tonefactor;
 }
@@ -177,20 +178,15 @@ function master_calculator()
 	var minutes;
 	var maxtimeinsun;
 	
-	maxtimeinsun = 3 * time_calculator() * season_calculator() /* * tone_calculator(3)*/ * longitude_calculator();
+	maxtimeinsun = 1.1 * time_calculator() * season_calculator() * tone_calculator() * longitude_calculator();
 	
-	maxtimeinsun = maxtimeinsun.toPrecision(2);
-	time = maxtimeinsun + convertTime();
+	maxtimeinsun = maxtimeinsun.toPrecision(2); 
 
-	if(time == 0)
+	if(maxtimeinsun == 0)
 		document.getElementById('sunburn').innerHTML = "No Chance";
-	else if(time>= 19)
-		document.getElementById('sunburn').innerHTML = "No Chance";
-	else if(time <= 5)
-		document.getElementById('sunburn').innerHTML = "No Chance";
-	else if(!time > 0)
+	else if(!maxtimeinsun > 0)
 		document.getElementById('sunburn').innerHTML = "?";
-	else
+	else 
 		document.getElementById('sunburn').innerHTML = maxtimeinsun + " hrs"; 
 
 	/* if(maxtimeinsun == 0)
