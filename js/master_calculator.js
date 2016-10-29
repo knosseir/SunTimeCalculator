@@ -170,8 +170,10 @@ function master_calculator()
 		document.getElementById('sunburn').innerHTML = "No Chance";
 	else if(time <= 5)
 		document.getElementById('sunburn').innerHTML = "No Chance";
+	else if(!maxtimeinsun > 0)
+		document.getElementById('sunburn').innerHTML = "?";
 	else
-		document.getElementById('sunburn').innerHTML = maxtimeinsun; 
+		document.getElementById('sunburn').innerHTML = maxtimeinsun + " hrs"; 
 
 	/* if(maxtimeinsun == 0)
 		console.log("No");

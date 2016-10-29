@@ -55,24 +55,34 @@
   </div>
 
   <div class="row">
-    <div id="ui" class="six columns center">
+    <div id="ui" class="six columns center" style="padding-top: 10vh;">
       <div class="row">
-        <div class="five columns offset-by-one labelCont">
-          <div class="data row">TIME:</div>
-          <div class="data row">LATITUDE:</div>
-          <div class="data row">LONGITUDE:</div>
-          <div class="data row">SEASON:</div>
-          <div class="data row">SKIN TONE:</div>
-          <div class="data row">TIME UNTIL SUNBURNT (IN HOURS):</div>
-        </div>
-        <div class="five columns labelCont">
-          <div id="dataTime" class="data row">?</div>
-          <div id="startLat" class="data row">?</div>
-          <div id="startLon" class="data row">?</div>
-          <div id="season" class="data row">?</div>
-          <div id="skin" class="data row">?</div>
-          <div id="sunburn" class="data row">?</div>
-        </div>
+        <div class="data six columns">TIME:</div>
+        <div id="dataTime" class="data">?</div>
+      </div>
+      <div class="row">
+        <div class="data six columns">LATITUDE:</div>
+        <div id="startLat" class="data">?</div>
+      </div>
+      <div class="row">
+        <div class="data six columns">LONGITUDE:</div>
+        <div id="startLon" class="data ">?</div>
+      </div>
+      <div class="row">
+        <div class="data six columns">SEASON:</div>
+        <div id="season" class="data ">?</div>
+      </div>
+      <div class="row">
+        <div class="data six columns">SKIN TONE:</div>
+        <div id="skin" class="data ">?</div>
+      </div>
+      <div class="row">
+        <div class="data six columns">WEATHER:</div>
+        <div id="weather" class="data ">?</div>
+      </div>
+      <div class="row">
+        <div class="data six columns">TIME UNTIL SUNBURNT:</div>
+        <div id="sunburn" class="data ">?</div>
       </div>
 
       <button type="button" id="locationButton" onclick="getUserLocation()">Find Location</button>
