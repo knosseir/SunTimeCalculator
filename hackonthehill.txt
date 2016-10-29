@@ -18,3 +18,5 @@ historical data: Kareem
 time of day: Kenny
 skin color: Ning
 fun fact/tip
+season
+altitude
