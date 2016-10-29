@@ -160,9 +160,8 @@ function master_calculator()
 	var time
 	var maxtimeinsun;
 	
-	maxtimeinsun = 3 * time_calculator() * season_calculator() * /*tone_calculator(3)*/ longitude_calculator();
-	maxtimeinsun = maxtimeinsun.toPrecision(3);
-
+	maxtimeinsun = 3 * time_calculator() * season_calculator() /* * tone_calculator(3)*/ * longitude_calculator();
+	
 	time = (maxtimeinsun + convertTime()) % 24;
 
 	if(maxtimeinsun == 0)
@@ -172,5 +171,14 @@ function master_calculator()
 	else if(time <= 5)
 		document.getElementById('sunburn').innerHTML = "No Chance";
 	else
-		document.getElementById('sunburn').innerHTML = maxtimeinsun;
+		document.getElementById('sunburn').innerHTML = maxtimeinsun; 
+
+	/* if(maxtimeinsun == 0)
+		console.log("No");
+	else if(time >= 19)
+		console.log("No");
+	else if(time <= 5)
+		console.log("No");
+	else
+		console.log(maxtimeinsun); */
 }
