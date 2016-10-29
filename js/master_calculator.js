@@ -160,7 +160,7 @@ function master_calculator()
 	var time
 	var maxtimeinsun;
 	
-	maxtimeinsun = 3 * time_calculator() * season_calculator() * /*tone_calculator(3)*/ * longitude_calculator();
+	maxtimeinsun = 3 * time_calculator() * season_calculator() * /*tone_calculator(3)*/ longitude_calculator();
 	
 	time = (maxtimeinsun + convertTime()) % 24;
 
