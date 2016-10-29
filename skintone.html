@@ -1,16 +1,30 @@
+<script>
+		function vitD()
+		{
+			var skinTone = document.getElementById('selection');
+			var s = skinTone.options[skinTone.selectedIndex].text;
+			if(skinTone == Skin1 || skinTone == Skin2)
+				return "You only need to stay under the sun 5-10 minutes a day to get enough vitamin D."
+			if(skinTone == Skin3 || skinTone == Skin4)
+				return "You only need to stay under the sun 10-15 minutes a day to get enough vitamin D."
+			if(skinTone == Skin5 || skinTone == Skin6)
+				return "You need to stay under the sun about an hour a day to get enough vitamin D."
+		}	
+</script> 
 <body>
 	<div id="header">
 		<p>
 		<font size="3">What is your skin tone?</font></p>
 		<img src="http://perfectimage-llc.com/wp-content/uploads/2015/02/FITZPATRICK-COLOR-CHART.png">
 		<div align="left">
-			<select name="mydropdown">
+			<select name="mydropdown" id="selection">
 			<option value="Skin1">Type I</option>
 			<option value="Skin2">Type II</option>
 			<option value="Skin3">Type III</option>
 			<option value="Skin4">Type IV</option>
 			<option value="Skin5">Type V</option>
-			<option value="SKin6">Type VI</option>
+			<option value="Skin6">Type VI</option>
 			</select>
+			<button onclick="vitD()">Enter</button>
 		</div>
 </body>
