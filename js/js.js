@@ -30,9 +30,15 @@ function pageload(){
 	findSeason();
 }
 
+function addZero(i) {
+    if (i < 10) {
+        i = "0" + i;
+    }
+    return i;
+}
 function findTime(){
 	var dt = new Date();
-	var time = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
+	var time = dt.getHours() + ":" + addZero(dt.getMinutes()) + ":" + dt.getSeconds();
 	document.getElementById("dataTime").innerHTML = time;
 }
 function findSeason(){
