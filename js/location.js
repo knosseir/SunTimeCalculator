@@ -10,6 +10,7 @@ function getUserLocation() {
     document.getElementById('startLon').innerHTML = startPos.coords.longitude;
     window.myLat = startPos.coords.latitude;
     window.myLon = startPos.coords.longitude;
+    refresh();
   };
   navigator.geolocation.getCurrentPosition(geoSuccess);
 
@@ -19,7 +20,7 @@ function initMap() {
   var westwood = {lat: 34.070, lng: -118.450};
 
   map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 9,
+    zoom: 7,
     center: westwood,
     mapTypeId: 'terrain'
   });
