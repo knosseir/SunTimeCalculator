@@ -6,4 +6,5 @@ var startPos;
     document.getElementById('startLon').innerHTML = startPos.coords.longitude;
   };
   navigator.geolocation.getCurrentPosition(geoSuccess);
+
 }
