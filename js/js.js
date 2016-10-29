@@ -25,10 +25,41 @@ function scrollToAnchor(aid){
     $('html,body').animate({scrollTop: aTag.offset().top},'slow');
 }
 
-function time(){
+function pageload(){
+	findTime();
+	findSeason();
+}
+
+function findTime(){
 	var dt = new Date();
 	var time = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
 	document.getElementById("dataTime").innerHTML = time;
-	console.log('a');
 }
-
+function findSeason(){
+	var dt = new Date();
+	var month = dt.getMonth();
+	var season;
+	switch (month){
+		case 11:
+		case 0:
+		case 1:
+			season = "Winter";
+			break;
+		case 2:
+		case 3:
+		case 4:
+			season = "Spring";
+			break;
+		case 5:
+		case 6:
+		case 7:
+			season = "Summer";
+			break;
+		case 8:
+		case 9:
+		case 10:
+			season = "Fall";
+			break;
+	}
+	document.getElementById("season").innerHTML = season;
+}
