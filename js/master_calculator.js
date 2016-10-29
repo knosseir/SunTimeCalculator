@@ -165,9 +165,9 @@ function master_calculator()
 	time = (maxtimeinsun + convertTime()) % 24;
 
 	if(maxtimeinsun == 0)
-		document.getElementById('sunburn').innerHTML = "No Chance"
+		document.getElementById('sunburn').innerHTML = "No Chance";
 	else if(time >= 19)
-		document.getElementById('sunburn').innerHTML = "No Chance"
+		document.getElementById('sunburn').innerHTML = "No Chance";
 	else if(time <= 5)
 		document.getElementById('sunburn').innerHTML = "No Chance";
 	else
