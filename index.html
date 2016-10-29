@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!--Javascript-->
-  <script src="time_calculator.js"></script>
-  <script src="season_calculator.js"></script>
-  <script src="master_calculator.js"></script>
-  <script src="Date.js"></script>
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
@@ -26,49 +21,65 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/css.css">
+
+  <!--Javascript-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="./js.js"></script>
+  <script src="./time_calculator.js"></script>
+  <script src="./season_calculator.js"></script>
+  <script src="./Date.js"></script>
+
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="favicon.png">
-
-  <style>
-      #map {
-        height: 400px;
-        width: 100%;
-       }
-    </style>
 
 </head>
 <body>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-    <div class="row">
-      <div class="eight columns offset-by-two" style="margin-top: 25%; text-align: center;">
-        <p style="font-size: 24px;">Website coming soon</p>
-        <h1 style="font-size: 78px;">Sun Time Calculator</h1>
-        <p style="font-size: 6px:"><sub>~really soon, I promise!~</sub></p>
-      </div>
+  
+  <div class="row">
+    <div id="nav" class="text white">
+      <a id="a" class="navBox" href="#">ABOUT</a>
+      <a id="b" class="navBox" href="#">PROJECTS</a>
+      <a id="c" class="navBox" href="#">CONTACT</a>
+    </div>
+
+    <img id="exp" src="./images/exp.png" height="26" width="26">
+
+    <div id="white">
+      <img id="x" src="./images/x.png" height="26" width="26">
+      <a id="a" class="wBox black center text" href="#" style="margin-top: 4vh;">ABOUT</a>
+      <a id="b" class="wBox black center text" href="#">PROJECTS</a>
+      <a id="xc" class="wBox black center text" href="#">CONTACT</a>
     </div>
   </div>
-   <div id="map"></div>
-  <script>
-      function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-    </script>
+
+  <div class="row">
+    <div id="ui" class="six columns">
+      TEST
     </div>
-  <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6NbQeFsHQKM8JJNdu-bxYlfIeQDogAl4&callback=initMap">
+
+    <div id="map" class="six columns"></div>
+    <script>
+        function initMap() {
+          var uluru = {lat: -25.363, lng: 131.044};
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 4,
+            center: uluru
+          });
+          var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+          });
+        }
     </script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6NbQeFsHQKM8JJNdu-bxYlfIeQDogAl4&callback=initMap">
+    </script>
+    
+  </div>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

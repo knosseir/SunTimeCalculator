@@ -1,1 +1,75 @@
 /*css*/
+body{
+}
+#map{
+	height: 92vh;
+	margin-top: 8vh;
+}
+#ui{
+	margin-top: 8vh;
+}
+#white{
+	min-height: 100vh;
+	min-width: 100vw;
+	position: absolute;
+	display: none;
+	left: 100vw;
+	z-index: 5;
+	background-color: white;
+}
+#nav{
+	position: absolute; 
+	text-align: right; 
+	background-color: transparent; 
+	width: 97vw;
+	margin-top: 2vh;
+	display: none;
+}
+.navBox{
+	padding-left: 2vw;
+	margin-bottom: 4vh;
+}
+.wBox{
+	font-size: 2rem;
+	padding-left: 2vw;
+	margin-bottom: 4vh;
+	display: block;
+}
+#exp{
+	position: absolute;
+	right: 12px;
+	top: 12px;
+	z-index: 5;
+}
+#exp:hover{
+	cursor: pointer;
+}
+#x{
+	position: relative;
+	top: 12px;
+	left: 12px;
+	z-index: 5;
+}
+.text{
+	font-size: 1.5rem;
+	font-weight: lighter;
+	font-family: 'Raleway', 'Source Sans Pro', sans-serif;
+}
+.center{
+	text-align: center;
+}
+.white{
+	color: white;
+}
+.black{
+	color: black;
+}
+
+@media (min-width: 550px){
+#nav{
+	display: inline;
+}
+#exp{
+	display: none;
+}
+}
