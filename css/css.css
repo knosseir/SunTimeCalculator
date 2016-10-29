@@ -8,6 +8,8 @@ body{
 }
 #ui{
 	padding-top: 7vh;
+	padding-left: 5vw;
+	padding-right: 5vw;
 	height: 100vh;
 }
 #white{
@@ -31,6 +33,12 @@ body{
 }
 #s{
 	/*stylize eventually*/
+}
+#dataCont{
+	text-align: left;
+}
+.data{
+	padding-top: 4px;
 }
 .navBox{
 	padding-right: 2vw;

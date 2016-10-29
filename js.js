@@ -13,6 +13,9 @@ $("#exp").click(function() {
 
 $("#map").css({overflow: 'scroll'});
 
+
+
+
 });//closes doc
 
 function vanish(callback, param){
@@ -26,4 +29,11 @@ function vanish(callback, param){
 function scrollToAnchor(aid){
     var aTag = $("a[name='"+ aid +"']");
     $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+}
+
+function time(){
+	var dt = new Date();
+	var time = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
+	document.getElementById("dataTime").innerHTML = time;
+	console.log('a');
 }
