@@ -1,10 +1,23 @@
 // The following code is used to get the current date.  
 // You can use this in other parts of the website!
+// Code is adapted from https://msdn.microsoft.com/en-us/library/ee532932(v=vs.94).aspx
 
+function getDate()
+{
+	return new Date();
+}
 
-var date = new Date();
+function month()
+{
+	return (new Date()).getMonth() +1;
+}
 
-// Display the month, day, and year. getMonth() returns a 0-based number.
-var month = dt.getMonth()+1;
-var day = dt.getDate();
-var year = dt.getFullYear();
+function day()
+{
+	return (new Date()).getDay();
+}
+
+function year()
+{
+	return (new Date()).getFullYear();
+}
