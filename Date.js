@@ -1,4 +1,4 @@
-// The following code is used to get the current date.  
+// The following functions can be used to get the current date.  
 // You can use this in other parts of the website!
 // Code is adapted from https://msdn.microsoft.com/en-us/library/ee532932(v=vs.94).aspx
 
