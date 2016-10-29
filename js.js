@@ -1,6 +1,5 @@
 $(document).ready(function(){
 
-
 $("#x").click(function(){
 	vanish(function(){}, '');
 });
@@ -10,11 +9,6 @@ $("#exp").click(function() {
 	$("#white").css({display: 'block'});
 	$("#white").animate({ left: "0vw" }, 500);
 });
-
-$("#map").css({overflow: 'scroll'});
-
-
-
 
 });//closes doc
 
