@@ -12,9 +12,9 @@ sun time calculator
 
 features:
 
-location
-date
-historical data
-time of day
-skin color
+location: Kareem
+date: Bryson
+historical data: Kareem
+time of day: Kenny
+skin color: Ning
 fun fact/tip
