@@ -1,16 +1,5 @@
-<script>
-		function vitD()
-		{
-			var skinTone = document.getElementById('selection');
-			var s = skinTone.options[skinTone.selectedIndex].text;
-			if(skinTone == Skin1 || skinTone == Skin2)
-				return "You only need to stay under the sun 5-10 minutes a day to get enough vitamin D."
-			if(skinTone == Skin3 || skinTone == Skin4)
-				return "You only need to stay under the sun 10-15 minutes a day to get enough vitamin D."
-			if(skinTone == Skin5 || skinTone == Skin6)
-				return "You need to stay under the sun about an hour a day to get enough vitamin D."
-		}	
-</script> 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" style=""></script>
 <body>
 	<div id="header">
 		<p>
@@ -26,5 +15,20 @@
 			<option value="Skin6">Type VI</option>
 			</select>
 			<button onclick="vitD()">Enter</button>
+			<a class="result"></a>
 		</div>
 </body>
+<script>
+		function vitD()
+		{
+			var skinTone = document.getElementById("selection");
+			var s = skinTone.options[skinTone.selectedIndex].value;
+			$(".result").append("</br>Result: ")
+			if(s == "Skin1" || s == "Skin2")
+				$(".result").append("You only need to stay under the sun 5-10 minutes a day to get enough vitamin D.")
+			if(s == "Skin3" || s == "Skin4")
+				$(".result").append("You only need to stay under the sun 10-15 minutes a day to get enough vitamin D.")
+			if(s == "Skin5" || s == "Skin6")
+				$(".result").append("You need to stay under the sun about an hour a day to get enough vitamin D.")
+		}	
+</script> 
