@@ -60,9 +60,11 @@
   <div class="row">
     <div id="ui" class="six columns center"><!--time skin location season-->
 
+    <button type="button" id="locationButton" onclick="getUserLocation()">Find Location</button>
+      <button type="button" id="refreshLocation" onclick="initMap()">Refresh map</button>
 
-      <button type="button" id="locationButton" onclick="getUserLocation()">Find Location</button>
-    </div>
+      <p id='startLat'>latitude</p>
+      <p id='startLon'>longitude</p>
 
     <div id="map" class="six columns"></div>
     <script>
