@@ -161,7 +161,8 @@ function master_calculator()
 	var maxtimeinsun;
 	
 	maxtimeinsun = 3 * time_calculator() * season_calculator() * /*tone_calculator(3)*/ longitude_calculator();
-	
+	maxtimeinsun = maxtimeinsun.toPrecision(3);
+
 	time = (maxtimeinsun + convertTime()) % 24;
 
 	if(maxtimeinsun == 0)
