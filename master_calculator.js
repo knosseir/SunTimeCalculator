@@ -68,28 +68,28 @@ function convertTime()
 function time_calculator() //x is user's input for time
 {
 	var timefactor;
-
-	if (convertTime() >= 0 && convertTime()<=5)
+	var converted = convertTime();
+	if (converted >= 0 && converted<=5)
 		timefactor = 0;
-	else if (convertTime() > 5 && convertTime() <=7)
+	else if (converted > 5 && converted <=7)
 		timefactor = 0.9;
-	else if (convertTime() > 7 && convertTime() <=8)
+	else if (converted > 7 && converted <=8)
 		timefactor = 0.7;
-	else if (convertTime() > 8 && convertTime() <=10)
+	else if (converted > 8 && converted <=10)
 		timefactor = 0.5;
-	else if (convertTime() > 10 && convertTime() <=12)
+	else if (converted > 10 && converted <=12)
 		timefactor = 0.3;
-	else if (convertTime() > 12 && convertTime() <=16) //12-4
+	else if (converted > 12 && converted <=16) //12-4
 		timefactor = 0.2;
-	else if (convertTime() > 16 && convertTime() <=17) //4-5
+	else if (converted > 16 && converted <=17) //4-5
 		timefactor = 0.4;
-	else if (convertTime() > 17 && convertTime() <=18) //5-6
+	else if (converted > 17 && converted <=18) //5-6
 		timefactor = 0.5;
-	else if (convertTime() > 18 && convertTime() <=19) //6-7
+	else if (converted > 18 && converted <=19) //6-7
 		timefactor = 0.7;
-	else if (convertTime() > 19 && convertTime() <=20) //7-8
+	else if (converted > 19 && converted <=20) //7-8
 		timefactor = 0.9;
-	else if (convertTime() > 20 && convertTime() <=24) //8-12
+	else if (converted > 20 && converted <=24) //8-12
 		timefactor = 0;
 
 	return timefactor;
