@@ -95,20 +95,21 @@ function time_calculator() //x is user's input for time
 	return timefactor;
 }
 
-function tone_calculator(z)
-{	var tonefactor;
-
-	if(z == 1)
+function tone_calculator(z) //perameter temporary until I can pull it from index
+{	
+	var tonefactor;
+	//z == document.getElementById('selection')
+	if(z == "Skin1")
 		tonefactor = 3;
-	else if(z == 2)
+	else if(z == "Skin2")
 		tonefactor = 4;
-	else if(z == 3)
+	else if(z == "Skin3")
 		tonefactor = 5;
-	else if(z == 4)
+	else if(z == "Skin4")
 		tonefactor = 6;
-	else if(z == 5)
+	else if(z == "Skin5")
 		tonefactor = 7;
-	else if(z == 6)
+	else if(z == "Skin6")
 		tonefactor = 13;
 
 	return tonefactor;
@@ -144,11 +145,31 @@ function season_calculator() //y = user's input for season
 	return seasonfactor;
 }
 
+function longitude_calculator(latitude) //perameter temporary until I can pull it from the index
+{
+	var longitudefactor;
+	//var latitude = 
+
+	longitudefactor = (90 - latitude) / 60; //not based on research but works for the demo lol
+
+	return longitudefactor;
+}
+
 function master_calculator()
-{	var maxtimeinsun;
-	maxtimeinsun = 3 * time_calculator() * season_calculator() * tone_calculator(3);
+{	
+	var time
+	var maxtimeinsun;
+	
+	maxtimeinsun = 3 * time_calculator() * season_calculator() * tone_calculator(3) * longitude_calculator(34.07);
+	
+	time = (maxtimeinsun + convertTime()) % 24;
+
 	if(maxtimeinsun == 0)
 		console.log("You're not gonna get sunburned.")
+	else if(time >= 19)
+		console.log("You're not gonna get sunburned by the time the sun sets.")
+	else if(time <= 5)
+		console.log("You wont even get sunburned before the sun comes back up ")
 	else
 		console.log("You can spend ", maxtimeinsun, "hours in the sun.");
 }
