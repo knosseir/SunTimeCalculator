@@ -1,0 +1,20 @@
+startbootstrap.com
+codepen.io
+scotch.io
+
+
+project ideas:
+
+fishing game
+polling location/election website
+pizza ordering app
+sun time calculator
+
+features:
+
+location
+date
+historical data
+time of day
+skin color
+fun fact/tip
