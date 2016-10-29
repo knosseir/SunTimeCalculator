@@ -34,8 +34,9 @@ body{
 #s{
 	/*stylize eventually*/
 }
-#dataCont{
+.labelCont{
 	text-align: left;
+	margin-top: 5vh;
 }
 .data{
 	padding-top: 4px;

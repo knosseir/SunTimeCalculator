@@ -55,29 +55,23 @@
 
 
   <div class="row">
-    <div id="ui" class="six columns center"><!--time skin location season-->
-      <form>
-        Skin Tone<br>
-        <input type="text" name="firstname"><br>
-      </form>
-
-      <div id="dataCont">
-        <div class="data">
-          <div>Time:
-          </div>
-          <div id="dataTime">
-          </div>
+    <div id="ui" class="six columns center">
+      <div class="row">
+        <div class="five columns offset-by-one labelCont">
+          <div class="data row">TIME:</div>
+          <div class="data row">LATITUDE:</div>
+          <div class="data row">LONGITUDE:</div>
+          <div class="data row">SEASON:</div>
+          <div class="data row">SKIN TONE:</div>
         </div>
-        <div id="startLat" class="data">Latitude: 
-        </div>
-        <div id="startLon" class="data">Longitude: 
-        </div>
-        <div id="season" class="data">Season: 
-        </div>
-        <div id="skin" class="data">Skin Tone: 
+        <div class="five columns labelCont">
+          <div id="dataTime" class="data"></div>
+          <div id="startLat" class="data"></div>
+          <div id="startLon" class="data"></div>
+          <div id="season" class="data"></div>
+          <div id="skin" class="data"></div>
         </div>
       </div>
-
 
       <button type="button" id="locationButton" onclick="getUserLocation()">Find Location</button>
       <button type="button" id="refreshLocation" onclick="initMap()">Refresh map</button>
