@@ -1,24 +1,38 @@
+var myLat;
+var myLon;
+var map;
+
 function getUserLocation() {
-var startPos;
+  var startPos;
   var geoSuccess = function(position) {
     startPos = position;
     document.getElementById('startLat').innerHTML = startPos.coords.latitude;
     document.getElementById('startLon').innerHTML = startPos.coords.longitude;
-    var lat = startPos.coords.latitude;
-    var lon = startPos.coords.longitude;
+    window.myLat = startPos.coords.latitude;
+    window.myLon = startPos.coords.longitude;
   };
   navigator.geolocation.getCurrentPosition(geoSuccess);
 
 }
 
 function initMap() {
-          var uluru = {lat: -25.363, lng: 131.044};
-          var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 4,
-            center: uluru
-          });
-          var marker = new google.maps.Marker({
-            position: {lat: lat, lon: lon},
-            map: map
-          });
-        }
+  var westwood = {lat: 34.070, lng: -118.450};
+
+  map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 9,
+    center: westwood,
+    mapTypeId: 'terrain'
+  });
+}
+
+function refresh(){
+  addMarker({lat: window.myLat, lng: window.myLon});
+  console.log(window.myLat);
+}
+function addMarker(location) {
+  var marker = new google.maps.Marker({
+    position: location,
+    map: map
+  });
+}
+
