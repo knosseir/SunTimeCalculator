@@ -2,11 +2,13 @@
 body{
 }
 #map{
-	height: 92vh;
-	margin-top: 8vh;
+	padding-top: 7vh;
+	height: 100vh;
+	margin-left: 0;
 }
 #ui{
-	margin-top: 8vh;
+	padding-top: 7vh;
+	height: 100vh;
 }
 #white{
 	min-height: 100vh;
@@ -19,14 +21,18 @@ body{
 }
 #nav{
 	position: absolute; 
-	text-align: right; 
-	background-color: transparent; 
-	width: 97vw;
-	margin-top: 2vh;
+	background-color: #3d3d3d; 
+	width: 100vw;
+	height: 5vh;
+	padding-top: 2vh;
 	display: none;
+	text-align: right;
+}
+#s{
+	/*stylize eventually*/
 }
 .navBox{
-	padding-left: 2vw;
+	padding-right: 2vw;
 	margin-bottom: 4vh;
 }
 .wBox{
@@ -63,6 +69,9 @@ body{
 }
 .black{
 	color: black;
+}
+#locationButton{
+	margin-top: 50vh;
 }
 
 @media (min-width: 550px){

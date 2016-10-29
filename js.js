@@ -11,6 +11,8 @@ $("#exp").click(function() {
 	$("#white").animate({ left: "0vw" }, 500);
 });
 
+$("#map").css({overflow: 'scroll'});
+
 });//closes doc
 
 function vanish(callback, param){
