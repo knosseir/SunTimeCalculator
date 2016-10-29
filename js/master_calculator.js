@@ -145,12 +145,12 @@ function season_calculator() //y = user's input for season
 	return seasonfactor;
 }
 
-function longitude_calculator(latitude) //perameter temporary until I can pull it from the index
+function longitude_calculator() //perameter temporary until I can pull it from the index
 {
 	var longitudefactor;
-	//var latitude = 
+	
 
-	longitudefactor = (90 - latitude) / 60; //not based on research but works for the demo lol
+	longitudefactor = (90 - window.myLat) / 60; //not based on research but works for the demo lol
 
 	return longitudefactor;
 }
@@ -160,16 +160,16 @@ function master_calculator()
 	var time
 	var maxtimeinsun;
 	
-	maxtimeinsun = 3 * time_calculator() * season_calculator() * tone_calculator(3) * longitude_calculator(34.07);
+	maxtimeinsun = 3 * time_calculator() * season_calculator() * /*tone_calculator(3)*/ * longitude_calculator();
 	
 	time = (maxtimeinsun + convertTime()) % 24;
 
 	if(maxtimeinsun == 0)
-		console.log("You're not gonna get sunburned.")
+		document.getElementById('sunburn').innerHTML = "No Chance"
 	else if(time >= 19)
-		console.log("You're not gonna get sunburned by the time the sun sets.")
+		document.getElementById('sunburn').innerHTML = "No Chance"
 	else if(time <= 5)
-		console.log("You wont even get sunburned before the sun comes back up ")
+		document.getElementById('sunburn').innerHTML = "No Chance";
 	else
-		console.log("You can spend ", maxtimeinsun, "hours in the sun.");
+		document.getElementById('sunburn').innerHTML = maxtimeinsun;
 }
