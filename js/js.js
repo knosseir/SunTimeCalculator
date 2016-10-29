@@ -31,3 +31,4 @@ function time(){
 	document.getElementById("dataTime").innerHTML = time;
 	console.log('a');
 }
+
