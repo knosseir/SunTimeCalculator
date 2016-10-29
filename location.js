@@ -25,7 +25,6 @@ function initMap() {
   });
 }
 
-
 function refresh(){
   addMarker({lat: window.myLat, lng: window.myLon});
   console.log(window.myLat);
