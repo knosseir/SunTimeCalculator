@@ -26,7 +26,6 @@ $("#but3").click(function() {
 		initMap();
 		refresh();
 	}
-	master_calculator();
 });
 
 });//closes doc

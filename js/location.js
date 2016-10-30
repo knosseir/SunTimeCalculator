@@ -2,7 +2,7 @@ var myLat;
 var myLon;
 var map;
 
-function getUserLocation() {
+function getUserLocation(param) {
   var startPos;
   var geoSuccess = function(position) {
     startPos = position;
@@ -10,7 +10,7 @@ function getUserLocation() {
     document.getElementById('startLon').innerHTML = startPos.coords.longitude;
     window.myLat = startPos.coords.latitude;
     window.myLon = startPos.coords.longitude;
-    refresh();
+    refresh(param);
   };
   navigator.geolocation.getCurrentPosition(geoSuccess);
 }
@@ -25,8 +25,9 @@ function initMap() {
   });
 }
 
-function refresh(){
+function refresh(callback){
   addMarker({lat: window.myLat, lng: window.myLon});
+  callback();
 }
 function addMarker(location) {
   var marker = new google.maps.Marker({

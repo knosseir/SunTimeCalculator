@@ -60,27 +60,23 @@
       <button id="but0"type="button" style="margin-top: 5vh;">Start</button>
     </div>
     <div id="b1" class="six columns center slide" style="padding-top: 10vh;">
-    
       <div style="font-size: 1.5rem">
-      Through the Sun Calculator, we can help determine how long a person should stay in the sun without risking damage, while still receiving just enough UV rays to maintain their daily vitamin D. The Sun Calculator takes different aspects into account, such as<br>
-      <ul>
-      <li>Geographic Location</li>
-      <li>Skin Tone</li>
-      <li>Time of Day</li>
-      <li>Daily Sunrise and Sunset</li>
-      <li>Season</li>
-      </ul>
-      Now, people can enjoy their leisure in the sun without having to worry about flaking skin or severe burns lasting multiple weeks. Whether it’s beach time activities, walks through the part, or even resting in your backyard, you’ll know just when you’ve reached your skin’s limit.<br>
-      To get started, press the button below. </div>
+        Through the Sun Calculator, we can help determine how long a person should stay in the sun without risking damage, while still receiving just enough UV rays to maintain their daily vitamin D. The Sun Calculator takes different aspects into account, such as<br>
+        <ul>
+          <li>Geographic Location</li>
+          <li>Skin Tone</li>
+          <li>Time of Day</li>
+          <li>Daily Sunrise and Sunset</li>
+          <li>Season</li>
+        </ul>
+        Now, people can enjoy their leisure in the sun without having to worry about flaking skin or severe burns lasting multiple weeks. Whether it’s beach time activities, walks through the part, or even resting in your backyard, you’ll know just when you’ve reached your skin’s limit.
+        <br>
+        To get started, press the button below. 
+      </div>
       <button id="but1" type="button" style="margin-top: 6vh;">Ok!</button>
     </div>
 
     <div id="b2" class="six columns center slide" style="padding-top: 10vh;">
-
-
-      <button id="but2" type="button" onclick="getUserLocation()" style="margin-top: 35vh;">Find Location</button>
-    </div>
-    <div id="b3" class="six columns center slide" style="padding-top: 5vh;">
       <div>
         <div class="text black" style="padding-top: 10vh;">What is your skin tone?</div>
         <img src="http://www.destinationskin.com/wp-content/uploads/2013/05/fitzpatrick-scale.jpg" width="90%" style="padding-top: 5vh">
@@ -93,7 +89,7 @@
             <option value="Skin5">Type V</option>
             <option value="Skin6">Type VI</option>
           </select>
-          <button id="but3" onclick="vitD()">Enter</button>
+          <button id="but2" onclick="vitD()">Enter</button>
         </div>
       </div>
       <script>
@@ -114,6 +110,10 @@
             $("#skin").html("Type " + s.substring(4));
           } 
       </script>
+    </div>
+
+    <div id="b3" class="six columns center slide" style="padding-top: 5vh;">
+      <button id="but3" type="button" onclick="getUserLocation(master_calculator)" style="margin-top: 35vh;">Find Location</button>
     </div>
     
 
