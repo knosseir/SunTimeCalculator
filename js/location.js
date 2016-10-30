@@ -9,7 +9,9 @@ function getUserLocation(param) {
     document.getElementById('startLat').innerHTML = startPos.coords.latitude;
     document.getElementById('startLon').innerHTML = startPos.coords.longitude;
     window.myLat = startPos.coords.latitude;
+    window.myLat = window.myLat.toPrecision(6);
     window.myLon = startPos.coords.longitude;
+    window.myLon = window.myLon.toPrecision(6);
     refresh(param);
   };
   navigator.geolocation.getCurrentPosition(geoSuccess);
