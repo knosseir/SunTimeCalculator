@@ -85,15 +85,15 @@
           {
             var skinTone = document.getElementById("selection");
             var s = skinTone.options[skinTone.selectedIndex].value;
-            $(".result").html("</br>Result: ")
+            $("#result").html("</br>Result: ")
             if(s == "Skin1" || s == "Skin2")
-              $(".result").html("You only need to stay under the sun 5-10 minutes a day to get enough vitamin D.")
+              $("#result").html("You only need to stay under the sun 5-10 minutes a day to get enough vitamin D.")
             if(s == "Skin3" || s == "Skin4")
-              $(".result").html("You only need to stay under the sun 10-15 minutes a day to get enough vitamin D.")
+              $("#result").html("You only need to stay under the sun 10-15 minutes a day to get enough vitamin D.")
             if(s == "Skin5")
-              $(".result").html("You need to stay under the sun about 45 minutes a day to get enough vitamin D.")
+              $("#result").html("You need to stay under the sun about 45 minutes a day to get enough vitamin D.")
             if(s == "Skin6")
-              $(".result").html("You need to stay under the sun about an hour a day to get enough vitamin D.")
+              $("#result").html("You need to stay under the sun about an hour a day to get enough vitamin D.")
           } 
       </script>
     </div>
