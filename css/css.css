@@ -7,11 +7,18 @@ body{
 	height: 100vh;
 	margin-left: 0;
 }
+#questions{
+	padding-top: 7vh;
+	padding-left: 5vw;
+	padding-right: 5vw;
+	height: 100vh;
+}
 #ui{
 	padding-top: 7vh;
 	padding-left: 5vw;
 	padding-right: 5vw;
 	height: 100vh;
+	display: none;
 }
 #white{
 	min-height: 100vh;
@@ -89,9 +96,6 @@ body{
 }
 .black{
 	color: black;
-}
-#locationButton{
-	margin-top: 50vh;
 }
 
 @media (min-width: 550px){
