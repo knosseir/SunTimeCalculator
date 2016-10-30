@@ -105,32 +105,26 @@ function tone_calculator() //perameter temporary until I can pull it from index
 	//z == document.getElementById('selection')
 	if(z == "Skin1")
 		{
-			document.getElementById('skin').innerHTML = "Type 1";
 			tonefactor = 3;
 		}
 	else if(z == "Skin2")
 		{
-			document.getElementById('skin').innerHTML = "Type 2";
 			tonefactor = 4;
 		}
 	else if(z == "Skin3")
 		{
-			document.getElementById('skin').innerHTML = "Type 3";
 			tonefactor = 5;
 		}
 	else if(z == "Skin4")
 		{
-			document.getElementById('skin').innerHTML = "Type 4";
 			tonefactor = 6;
 		}
 	else if(z == "Skin5")
 		{
-			document.getElementById('skin').innerHTML = "Type 5";
 			tonefactor = 7;
 		}
 	else if(z == "Skin6")
 		{
-			document.getElementById('skin').innerHTML = "Type 6";
 			tonefactor = 13;
 		}
 	return tonefactor;
