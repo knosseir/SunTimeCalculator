@@ -179,10 +179,11 @@ function master_calculator()
 	var maxtimeinsun;
 	
 	maxtimeinsun = 1.1 * time_calculator() * season_calculator() * tone_calculator() * longitude_calculator();
-	
-	maxtimeinsun = maxtimeinsun.toPrecision(2); 
-	time = maxtimeinsun + convertTime();
+	console.log("b" + maxtimeinsun + "b")
 
+	maxtimeinsun = maxtimeinsun.toPrecision(2); 
+	time = maxtimeinsun;
+	console.log("a" + time + "aa");
 	if(time == 0)
 		document.getElementById('sunburn').innerHTML = "No Chance";
 	else if(time >= 19)
