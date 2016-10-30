@@ -2,16 +2,16 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 body{
 }
-#map{
-	padding-top: 7vh;
-	height: 100vh;
-	margin-left: 0;
-}
-#questions{
+#b1{
 	padding-top: 7vh;
 	padding-left: 5vw;
 	padding-right: 5vw;
 	height: 100vh;
+}
+#map{
+	padding-top: 7vh;
+	height: 100vh;
+	margin-left: 0;
 }
 #ui{
 	padding-top: 7vh;

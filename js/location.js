@@ -13,7 +13,7 @@ function getUserLocation() {
     refresh();
   };
   navigator.geolocation.getCurrentPosition(geoSuccess);
-master_calculator();
+  //master_calculator();
 }
 
 function initMap() {
@@ -35,4 +35,3 @@ function addMarker(location) {
     map: map
   });
 }
-
