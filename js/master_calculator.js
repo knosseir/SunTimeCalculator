@@ -182,7 +182,7 @@ function master_calculator()
 	console.log("b" + maxtimeinsun + "b")
 
 	maxtimeinsun = maxtimeinsun.toPrecision(2); 
-	time = maxtimeinsun;
+	time = convertTime(maxtimeinsun);
 	console.log("a" + time + "aa");
 	if(time == 0)
 		document.getElementById('sunburn').innerHTML = "No Chance";
