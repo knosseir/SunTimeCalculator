@@ -18,9 +18,14 @@ $("#but1").click(function() {
 });
 $("#but2").click(function() {
 	$("#b2").animate({ left: "-100vw" }, 750);
-	$("#map").css({display: "block"});
-	initMap();
-	refresh();
+});
+$("#but3").click(function() {
+	$("#b3").animate({ left: "-100vw" }, 750);
+	if ($(document).width() < 550){
+		$("#map").css({display: "block"});
+		initMap();
+		refresh();
+	}
 });
 
 });//closes doc

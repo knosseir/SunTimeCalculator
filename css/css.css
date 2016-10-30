@@ -28,6 +28,9 @@ body{
 #b2{
 	z-index: 7;
 }
+#b3{
+	z-index: 6;
+}
 #ui{
 	position: relative;
 	padding-top: 7vh;
