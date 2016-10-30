@@ -10,6 +10,16 @@ $("#exp").click(function() {
 	$("#white").animate({ left: "0vw" }, 500);
 });
 
+$("#but0").click(function() {
+	$("#b0").animate({ left: "-50vw" }, 600);
+});
+$("#but1").click(function() {
+	$("#b1").animate({ left: "-50vw" }, 600);
+});
+$("#but2").click(function() {
+	$("#b2").animate({ left: "-50vw" }, 600);
+});
+
 });//closes doc
 
 function vanish(callback, param){

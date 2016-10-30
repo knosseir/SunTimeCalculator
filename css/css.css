@@ -2,23 +2,39 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 body{
 }
-#b1{
+.slide{
 	padding-top: 7vh;
 	padding-left: 5vw;
 	padding-right: 5vw;
 	height: 100vh;
+
+	position: absolute;
+	left: 0vw;
+	z-index: 0;
+	background-color: white;
 }
 #map{
 	padding-top: 7vh;
 	height: 100vh;
 	margin-left: 0;
 }
+#b0{
+	z-index: 9;
+}
+#b1{
+	z-index: 8;
+}
+#b2{
+	z-index: 7;
+}
 #ui{
+	position: relative;
 	padding-top: 7vh;
 	padding-left: 5vw;
 	padding-right: 5vw;
 	height: 100vh;
-	display: none;
+	visibility: visible;
+	margin-left: 0vw;
 }
 #white{
 	min-height: 100vh;
@@ -26,7 +42,7 @@ body{
 	position: absolute;
 	display: none;
 	left: 100vw;
-	z-index: 5;
+	z-index: 15;
 	background-color: white;
 }
 #nav{
@@ -36,7 +52,7 @@ body{
 	height: 5vh;
 	padding-top: 2vh;
 	text-align: right;
-	z-index: 5;
+	z-index: 10;
 }
 #s{
 	/*stylize eventually*/

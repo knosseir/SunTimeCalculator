@@ -49,15 +49,55 @@
 
     <div id="white">
       <img id="x" src="./images/x.png" height="26" width="26">
-      <a id="a" class="wBox black center text" href="#" style="margin-top: 4vh;">ABOUT</a>
+      <a id="xa" class="wBox black center text" href="#" style="margin-top: 4vh;">ABOUT</a>
       <a id="xc" class="wBox black center text" href="https://github.com/knosseir/SunTimeCalculator">GITHUB</a>
     </div>
   </div>
 
   <div class="row">
-    <div id="b1" class="six columns center" style="padding-top: 10vh;">
-      <button type="button" onclick="getUserLocation()" style="margin-top: 35vh;">Find Location</button>
+    <div id="b0" class="six columns center slide" style="padding-top: 13vh;">
+      <div style="font-size: 3.3rem" >Hey ACM Hack!</div>
+      <div style="padding-top: 5vh">Our website takes some user data and outputs how long they can be in the sun before they receiving a sun burn!</div>
+      <div style="padding-top: 5vh">Built by: </div>
+      <button id="but0"type="button" style="margin-top: 5vh;">Start</button>
     </div>
+    <div id="b1" class="six columns center slide" style="padding-top: 10vh;">
+      <button id="but1" type="button" onclick="getUserLocation()" style="margin-top: 35vh;">Find Location</button>
+    </div>
+    <div id="b2" class="six columns center slide" style="padding-top: 10vh;">
+      <div>
+        <div class="text black">What is your skin tone?</div>
+        <img src="http://www.destinationskin.com/wp-content/uploads/2013/05/fitzpatrick-scale.jpg" width="85%">
+        <div>
+          <select name="mydropdown" id="selection">
+            <option value="Skin1">Type I</option>
+            <option value="Skin2">Type II</option>
+            <option value="Skin3">Type III</option>
+            <option value="Skin4">Type IV</option>
+            <option value="Skin5">Type V</option>
+            <option value="Skin6">Type VI</option>
+          </select>
+          <button id="but2" onclick="vitD()">Enter</button>
+        </div>
+      </div>
+      <script>
+          function vitD()
+          {
+            var skinTone = document.getElementById("selection");
+            var s = skinTone.options[skinTone.selectedIndex].value;
+            $(".result").html("</br>Result: ")
+            if(s == "Skin1" || s == "Skin2")
+              $(".result").html("You only need to stay under the sun 5-10 minutes a day to get enough vitamin D.")
+            if(s == "Skin3" || s == "Skin4")
+              $(".result").html("You only need to stay under the sun 10-15 minutes a day to get enough vitamin D.")
+            if(s == "Skin5")
+              $(".result").html("You need to stay under the sun about 45 minutes a day to get enough vitamin D.")
+            if(s == "Skin6")
+              $(".result").html("You need to stay under the sun about an hour a day to get enough vitamin D.")
+          } 
+      </script>
+    </div>
+    
 
     <div id="ui" class="six columns center" style="padding-top: 10vh;">
       <div class="row">
@@ -88,40 +128,10 @@
         <div class="data six columns">TIME UNTIL SUNBURNT:</div>
         <div id="sunburn" class="data ">?</div>
       </div>
-
-      <div>
-        <p>
-        <font size="3">What is your skin tone?</font></p>
-        <img src="http://www.destinationskin.com/wp-content/uploads/2013/05/fitzpatrick-scale.jpg" width="85%">
-        <div>
-          <select name="mydropdown" id="selection">
-          <option value="Skin1">Type I</option>
-          <option value="Skin2">Type II</option>
-          <option value="Skin3">Type III</option>
-          <option value="Skin4">Type IV</option>
-          <option value="Skin5">Type V</option>
-          <option value="Skin6">Type VI</option>
-          </select>
-          <button onclick="vitD()">Enter</button>
-          <a class="result"></a>
-        </div>
+      <div class="row">
+        <div class="data six columns">TIME UNTIL SUNBURNT:</div>
+        <div id="result" class="data ">?</div>
       </div>
-      <script>
-          function vitD()
-          {
-            var skinTone = document.getElementById("selection");
-            var s = skinTone.options[skinTone.selectedIndex].value;
-            $(".result").html("</br>Result: ")
-            if(s == "Skin1" || s == "Skin2")
-              $(".result").html("You only need to stay under the sun 5-10 minutes a day to get enough vitamin D.")
-            if(s == "Skin3" || s == "Skin4")
-              $(".result").html("You only need to stay under the sun 10-15 minutes a day to get enough vitamin D.")
-            if(s == "Skin5")
-              $(".result").html("You need to stay under the sun about 45 minutes a day to get enough vitamin D.")
-            if(s == "Skin6")
-              $(".result").html("You need to stay under the sun about an hour a day to get enough vitamin D.")
-          } 
-      </script>
     </div>
   
     <div id="map" class="six columns"></div>
