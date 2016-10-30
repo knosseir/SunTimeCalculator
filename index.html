@@ -64,11 +64,11 @@
     <div id="b1" class="six columns center slide" style="padding-top: 10vh;">
       <button id="but1" type="button" onclick="getUserLocation()" style="margin-top: 35vh;">Find Location</button>
     </div>
-    <div id="b2" class="six columns center slide" style="padding-top: 10vh;">
+    <div id="b2" class="six columns center slide" style="padding-top: 5vh;">
       <div>
-        <div class="text black">What is your skin tone?</div>
-        <img src="http://www.destinationskin.com/wp-content/uploads/2013/05/fitzpatrick-scale.jpg" width="85%">
-        <div>
+        <div class="text black" style="padding-top: 10vh;">What is your skin tone?</div>
+        <img src="http://www.destinationskin.com/wp-content/uploads/2013/05/fitzpatrick-scale.jpg" width="90%" style="padding-top: 5vh">
+        <div style="padding-top: 5vh">
           <select name="mydropdown" id="selection">
             <option value="Skin1">Type I</option>
             <option value="Skin2">Type II</option>
@@ -94,6 +94,8 @@
               $("#result").html("You need to stay under the sun about 45 minutes a day to get enough vitamin D.")
             if(s == "Skin6")
               $("#result").html("You need to stay under the sun about an hour a day to get enough vitamin D.")
+
+            $("#skin").html("Type " + s.substring(4));
           } 
       </script>
     </div>
@@ -102,35 +104,35 @@
     <div id="ui" class="six columns center" style="padding-top: 10vh;">
       <div class="row">
         <div class="data six columns">TIME:</div>
-        <div id="dataTime" class="data">?</div>
+        <div id="dataTime" class="data six columns">loading...</div>
       </div>
       <div class="row">
         <div class="data six columns">LATITUDE:</div>
-        <div id="startLat" class="data">?</div>
+        <div id="startLat" class="data six columns">loading...</div>
       </div>
       <div class="row">
         <div class="data six columns">LONGITUDE:</div>
-        <div id="startLon" class="data ">?</div>
+        <div id="startLon" class="data six columns">loading...</div>
       </div>
       <div class="row">
         <div class="data six columns">SEASON:</div>
-        <div id="season" class="data ">?</div>
+        <div id="season" class="data six columns">loading...</div>
       </div>
       <div class="row">
         <div class="data six columns">SKIN TONE:</div>
-        <div id="skin" class="data ">?</div>
+        <div id="skin" class="data six columns">loading...</div>
       </div>
       <div class="row">
         <div class="data six columns">WEATHER:</div>
-        <div id="weather" class="data ">?</div>
+        <div id="weather" class="data six columns">loading...</div>
       </div>
       <div class="row">
         <div class="data six columns">TIME UNTIL SUNBURNT:</div>
-        <div id="sunburn" class="data ">?</div>
+        <div id="sunburn" class="data six columns">loading...</div>
       </div>
       <div class="row">
-        <div class="data six columns">Result:</div>
-        <div id="result" class="data ">?</div>
+        <div class="data six columns">Recommendation:</div>
+        <div id="result" class="data six columns">loading...</div>
       </div>
     </div>
   

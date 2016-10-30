@@ -17,6 +17,7 @@ body{
 	padding-top: 7vh;
 	height: 100vh;
 	margin-left: 0;
+	display: none;
 }
 #b0{
 	z-index: 9;
@@ -32,7 +33,7 @@ body{
 	padding-top: 7vh;
 	padding-left: 5vw;
 	padding-right: 5vw;
-	height: 100vh;
+	height: 80vh;
 	visibility: visible;
 	margin-left: 0vw;
 }
@@ -88,7 +89,7 @@ body{
 	position: absolute;
 	right: 14px;
 	top: 14px;
-	z-index: 5;
+	z-index: 15;
 }
 #exp:hover{
 	cursor: pointer;
@@ -117,6 +118,9 @@ body{
 @media (min-width: 550px){
 #nav{
 	display: inline;
+}
+#map{
+	display: block;
 }
 #a{
 	display: inline-block;

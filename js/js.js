@@ -11,13 +11,16 @@ $("#exp").click(function() {
 });
 
 $("#but0").click(function() {
-	$("#b0").animate({ left: "-50vw" }, 600);
+	$("#b0").animate({ left: "-100vw" }, 750);
 });
 $("#but1").click(function() {
-	$("#b1").animate({ left: "-50vw" }, 600);
+	$("#b1").animate({ left: "-100vw" }, 750);
 });
 $("#but2").click(function() {
-	$("#b2").animate({ left: "-50vw" }, 600);
+	$("#b2").animate({ left: "-100vw" }, 750);
+	$("#map").css({display: "block"});
+	initMap();
+	refresh();
 });
 
 });//closes doc
