@@ -10,10 +10,6 @@ $("#exp").click(function() {
 	$("#white").animate({ left: "0vw" }, 500);
 });
 
-$("#b1").click(function() {
-	alert('a');
-});
-
 });//closes doc
 
 function vanish(callback, param){
