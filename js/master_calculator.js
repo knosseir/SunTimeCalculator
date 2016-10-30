@@ -181,10 +181,15 @@ function master_calculator()
 	maxtimeinsun = 1.1 * time_calculator() * season_calculator() * tone_calculator() * longitude_calculator();
 	
 	maxtimeinsun = maxtimeinsun.toPrecision(2); 
+	time = maxtimeinsun + convertTime();
 
-	if(maxtimeinsun == 0)
+	if(time == 0)
 		document.getElementById('sunburn').innerHTML = "No Chance";
-	else if(!maxtimeinsun > 0)
+	else if(time >= 19)
+		document.getElementById('sunburn').innerHTML = "No Chance";
+	else if(time <= 5)
+		document.getElementById('sunburn').innerHTML = "No Chance";
+	else if(!time > 0)
 		document.getElementById('sunburn').innerHTML = "?";
 	else 
 		document.getElementById('sunburn').innerHTML = maxtimeinsun + " hrs"; 
