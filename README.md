@@ -1,11 +1,9 @@
-# SunTimeCalculator (10/29/2016)
-## Some Quick Resources
+# SunTimeCalculator (Created 10/29/2016)
 
-- startbootstrap.com
-- codepen.io
-- scotch.io
-- [google maps API?](https://developers.google.com/maps/web-services/) .  ie. geolocation?
+>Our website takes some user data and outputs how long they can be in the sun before they receiving a sun burn!
 
-- http://sunrise-sunset.org/api for sunset/sunrise times
-- http://sites.psu.edu/meteo473milestone4sunburn/algorithm-design/ calculations
-- possible helpful link? http://stackoverflow.com/questions/20881213/converting-json-object-into-javascript-array
+The Sun Time Calculator determines how long a person should stay in the sun without risking damage and still receiving just enough UV rays to maintain their daily vitamin D. The Sun Time Calculator takes different aspects into account, such as geographic location, skin tone, time of day, daily sunrise and sunset, as well as the season.
+
+Now, people can enjoy their leisure in the sun without having to worry about flaking skin or severe burns lasting multiple weeks. Whether it’s beach time activities, walks through the part, or even resting in your backyard, you’ll know just when you’ve reached your skin’s limit.
+
+The project was built mobile-first, so be sure to test it out on your phone!
